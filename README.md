@@ -1,1 +1,1 @@
-# ai-skin-detection
+# Ai Skin Analysis & Detection System
