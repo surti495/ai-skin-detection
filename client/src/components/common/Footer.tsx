@@ -1,3 +1,7 @@
+'use client';
+
+import Image from 'next/image';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -8,11 +12,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <section className="flex flex-col items-start">
-            <img 
-              src="/logo.png" 
-              alt="AI Skin Detection Logo" 
-              className="h-10 w-auto mb-2"
-            />
+            <a href="/" className="mb-2 hover:opacity-80 transition-opacity">
+              <Image 
+                src="/logo.png" 
+                alt="AI Skin Detection Logo" 
+                width={40} 
+                height={40}
+                className="h-10 w-auto"
+              />
+            </a>
             <p className="text-gray-300 text-sm">
               Advanced AI-powered skin analysis for better health insights.
             </p>
